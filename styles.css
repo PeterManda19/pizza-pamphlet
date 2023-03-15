@@ -1,0 +1,102 @@
+body{
+    background-color:lightseagreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.h1{
+    text-align: center;
+}
+
+
+.pizza {
+    /* box-model */
+    border: 5px solid;
+    padding: 1em;
+    margin: 1em;
+    margin-bottom: 0.5em;
+    border-radius: 1em;
+
+    display: flex;
+    flex-direction: column;
+
+    
+
+   
+}
+
+.small-pizza{
+    background-color: palevioletred;
+    flex: 1;
+    text-align: left;
+}
+
+.medium-pizza{
+    background-color: orange;
+    flex: 1;
+    text-align: left;
+}
+
+.large-pizza{
+    background-color: orangered;
+    flex: 1;
+    text-align: left;
+}
+
+
+
+/*  large devices 1200px
+    laptops 992px
+    tablets 768px
+    phones (potrait) 576px*/
+@media (min-width: 960px) {
+    .pizzas{
+        display: flex;
+
+        /* gap: 10px;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap; */
+    }      
+
+    .pizza {
+        flex-basis: calc(50% - 5px);
+        text-align: left;
+    }
+    
+
+    .img{
+        display: flex;
+        float: right;
+        margin: 1em 1em 1em 1em;  
+    }
+}
+
+@media (min-width: 768px) {
+    .pizzas{
+        display: flex;
+
+        /* gap: 10px;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap; */
+    } 
+}
+
+
+
+.contact-details{
+    background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-left {
+    flex-basis: 100%;
+}
+
+.contact-right {
+    flex-basis: 100%;
+    text-align: right;
+    
+}
