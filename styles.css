@@ -17,10 +17,7 @@ body{
     border-radius: 1em;
 
     display: flex;
-    flex-direction: column;
-
-    
-
+    flex-direction: column
    
 }
 
@@ -51,44 +48,70 @@ body{
 @media (min-width: 960px) {
     .pizzas{
         display: flex;
+    }     
 
-        /* gap: 10px;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap; */
-    }      
-
-    .pizza {
-        flex-basis: calc(50% - 5px);
-        text-align: left;
+    .box {
+        display: inline-block;
+        width: 100%;
+        height: 100px;  
     }
-    
 
-    .img{
-        display: flex;
-        float: right;
-        margin: 1em 1em 1em 1em;  
+    /* .box:first-child {
+        background-color: blue;
+    } */
+        
+    .box:last-child {
+        /* background-color: red; */
+        text-align: right;
     }
 }
 
 @media (min-width: 768px) {
     .pizzas{
         display: flex;
-
-        /* gap: 10px;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap; */
     } 
+
+    .box {
+        display: inline-block;
+        width: 100%;
+        height: 100px;  
+    }
+
+    /* .box:first-child {
+        background-color: blue;
+    } */
+        
+    .box:last-child {
+        /* background-color: red; */
+        text-align: right;
+    }
 }
 
+@media (min-width: 200px) {
+    .pizzas{
+        display: flex;
+    } 
 
+    .box {
+        display: inline-block;
+        width: 100%;
+        height: 100px;  
+    }
+
+    /* .box:first-child {
+        background-color: blue;
+    } */
+
+    .box:last-child {
+        /* background-color: red; */
+        text-align: right;
+    }
+}
 
 .contact-details{
     background-color: yellow;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
 }
 
 .contact-left {
@@ -100,3 +123,8 @@ body{
     text-align: right;
     
 }
+
+
+  
+
+  
