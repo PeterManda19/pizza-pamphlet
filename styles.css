@@ -7,7 +7,6 @@ body{
     text-align: center;
 }
 
-
 .pizza {
     /* box-model */
     border: 5px solid;
@@ -38,8 +37,6 @@ body{
     flex: 1;
     text-align: left;
 }
-
-
 
 /*  large devices 1200px
     laptops 992px
@@ -87,7 +84,7 @@ body{
     }
 }
 
-@media (min-width: 360px) {
+@media (min-width: 576px) {
     .pizzas{
         display: flex;
     } 
@@ -104,7 +101,7 @@ body{
 
     .box:last-child {
         /* background-color: red; */
-        text-align: right;
+        text-align: center;
     }
 }
 
@@ -113,18 +110,3 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
-
-.contact-left {
-    flex-basis: 100%;
-}
-
-.contact-right {
-    flex-basis: 100%;
-    text-align: right;
-    
-}
-
-
-  
-
-  
